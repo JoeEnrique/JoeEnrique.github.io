@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.info_container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 20vw;
+  height: 70vh;
+  margin: 5px;
+  border: 10px solid green;
+  background-color: rgb(124, 179, 124);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.info_container p {
+  margin: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.ball_container {
+  position: relative;
+  display: block;
+  float: left;
+  width: 70%;
+  margin: 5px;
+  height: 70vh;
+  border: 10px solid green;
+}
+
+.title_block {
+  background-color: green;
+  width: 100%;
+  padding: 30px;
+  text-align: left;
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#title1 {
+  margin: 5px;
+  color: white;
+  text-align: center;
+  font-weight: 200px;
+}
+
+#ball0 {
+  z-index: 1;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgb(10, 206, 10);
+}
+
+#ball1 {
+  z-index: 2;
+  position: absolute;
+  left: 160px;
+  top: 160px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: gray;
+}
+
+#ball2 {
+  z-index: 2;
+  position: absolute;
+  left: 240px;
+  top: 160px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: gray;
+}
+
+#ball3 {
+  z-index: 3;
+  position: absolute;
+  left: 280px;
+  top: 200px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: gray;
+}
+
+#ball4 {
+  z-index: 3;
+  position: absolute;
+  left: 240px;
+  top: 240px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: gray;
+}
+
+#ball5 {
+  z-index: 4;
+  position: absolute;
+  left: 160px;
+  top: 240px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: gray;
+}
+
+#ball6 {
+  z-index: 4;
+  position: absolute;
+  left: 120px;
+  top: 200px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: gray;
+}
+
+#go_back {
+  font-size: 20px;
+  padding: 0px 20px 0px 20px;
+}
