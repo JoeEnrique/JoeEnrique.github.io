@@ -3,11 +3,14 @@
 Portfolio
 > Version 0.4
 
-This is will be my future Online Portfolio. Is under construction but the general public can visit and have an opportunity to consider my work style.
+Project Name: Jose Figueroa Portfolio.  
 
-Right now I am a student at MIT.
-The best and the only one Massachusetts Institute of Technology.
+Description: This is will be my future Online Portfolio. Is under construction but the general public can visit and have an opportunity to consider my work style.
 
-This could be considered as a timeline history of my work. This is my very first work studying here.
-I feel like a guy that wins the lottery!
+Installation: n/a
 
+Usage: Right now everybody that verify this page periodically will see the updates done week by week. This could be considered as a timeline history of my work. This is my very first work studying here. I feel like a guy that wins the lottery!
+
+Support: Jose Figueroa 
+
+Roadmap:  I am a student at MIT. The best and the only one Massachusetts Institute of Technology.
