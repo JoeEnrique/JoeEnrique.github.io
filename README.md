@@ -3,6 +3,7 @@
 Portfolio
 > Version 0.4
 
+
 Project Name: Jose Figueroa Portfolio.  
 
 Description: This is will be my future Online Portfolio. Is under construction but the general public can visit and have an opportunity to consider my work style.
