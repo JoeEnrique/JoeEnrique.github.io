@@ -26,7 +26,7 @@ var color_list = [
 var color_list_index = 0;
 
 //Size List
-var size_list = [50, 60, 70, 80, 90, 100, 110, 120, 110, 100, 90, 80, 70, 60];
+var size_list = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 180, 200, 240, 280, 300, 280, 240, 200, 180, 160, 150, 140, 130, 120, 110, 100, 90, 80, 70, 60];
 var size_list_index = 0;
 
 //Shape List
@@ -36,6 +36,12 @@ var form_radius_list_index = 0;
 //Velocity List
 var velocity_list = [4, 8, 12, 16, 20, 16, 12, 8, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4];
 var velocity_list_index = 0;
+
+var velocity_list_X = [4, 8, 12, 16, 20, 16, 12, 8, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4];
+var velocity_list_index_X = 0;
+
+var velocity_list_Y = [4, 8, 12, 16, 20, 16, 12, 8, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4];
+var velocity_list_index_Y = 0;
 
 //Move Ball 0
 function move_Ball_1() {
@@ -83,53 +89,41 @@ function move_Ball_1() {
   ball_0.style.background = color_list[color_list_index];
 }
 
-//Move all balls
-function move_Ball() {
+function checkSizeDirection(){
   let selectedBall = document.getElementById(ball_list[ball_list_index]);
   let mainContainer_Width = mainContainer.offsetWidth;
   let mainContainer_Height = mainContainer.offsetHeight;
   let location_X = selectedBall.offsetLeft;
   let location_Y = selectedBall.offsetTop;
-
-  var actualWidth = mainContainer_Width - (size_list[size_list_index] + 20);
-  var actualHeight = mainContainer_Height - (size_list[size_list_index] + 20);
-
-  if (leftFoward == true) {
-    location_X = location_X + velocity_list[velocity_list_index];
-  } else {
-    location_X = location_X - velocity_list[velocity_list_index];
-  }
-
-  if (topFoward == true) {
-    location_Y = location_Y + velocity_list[velocity_list_index];
-  } else {
-    location_Y = location_Y - velocity_list[velocity_list_index];
-  }
-
-  if (location_X >= actualWidth) {
-    leftFoward = false;
-  }
-
-  if (location_X <= 0) {
-    leftFoward = true;
-  }
-
-  if (location_Y >= actualHeight) {
-    topFoward = false;
-  }
-
-  if (location_Y <= 0) {
-    topFoward = true;
-  }
-
-  selectedBall.style.left = location_X + "px";
-  selectedBall.style.top = location_Y + "px";
   selectedBall.style.width = size_list[size_list_index] + "px";
   selectedBall.style.height = size_list[size_list_index] + "px";
+
+  if (location_X < 0 || location_X > mainContainer_Width - (selectedBall.offsetWidth + 20)) {
+    velocity_list_X[velocity_list_index_X] = -velocity_list_X[velocity_list_index_X];
+  }
+
+  if (location_Y < 0 || location_Y > mainContainer_Height - (selectedBall.offsetHeight + 20)) {
+    velocity_list_Y[velocity_list_index_Y] = -velocity_list_Y[velocity_list_index_Y];
+  }
+}
+
+
+//Move all balls
+function move_Ball() {
+  let selectedBall = document.getElementById(ball_list[ball_list_index]);
+  let location_X = selectedBall.offsetLeft;
+  let location_Y = selectedBall.offsetTop;
+  checkSizeDirection();
+
+  selectedBall.style.left = location_X + velocity_list_X[velocity_list_index_X] + "px";
+  selectedBall.style.top = location_Y + velocity_list_Y[velocity_list_index_Y] + "px";
+
   selectedBall.style.borderRadius =
     form_radius_list[form_radius_list_index] + "%";
   selectedBall.style.background = color_list[color_list_index];
 }
+
+
 
 //Set Intervals for Ball 0
 function run_ball_1() {
@@ -183,6 +177,7 @@ function next_Size() {
   if (size_list_index > size_list.length) {
     size_list_index = 0;
   }
+  checkSizeDirection();
 }
 
 //Next Shape List
@@ -199,6 +194,7 @@ function next_Speed() {
   if (velocity_list_index > velocity_list.length) {
     velocity_list_index = 0;
   }
+
 }
 
 //Set Interval for Colors
@@ -208,7 +204,7 @@ function swap_Color() {
 
 //Set Interval for Sizes
 function swap_Size() {
-  setInterval(next_Size, 500);
+  setInterval(next_Size, 1000);
 }
 
 //Set Interval for Shapes

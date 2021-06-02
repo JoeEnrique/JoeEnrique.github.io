@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/styles/styles.css" />
+    <link rel="stylesheet" href="./resources/styles/pacman.css" />
+    <title>Pacman Animation</title>
+</head>
+<body style="background-color: black; overflow: hidden;">
+    <div class="title_block">
+        <h1>Pacman Animation</h1>
+      </div>
+    <div id="pacman_animation">
+        <img id="PacMan" src="./resources/images/PacMan1.png" width='200' onclick="Run()" style="position:absolute"> </img>
+    </div>
+    <section>
+        <div id="ghost">
+            <div id="ghost_body"></div>
+            <div id="foot_0"></div>
+            <div id="foot_1"></div>
+            <div id="foot_2"></div>
+            <div id="foot_3"></div>
+            <div id="left-eye"></div>
+            <div id="right-eye"></div>
+            <div id="left-pupil"></div>
+            <div id="right-pupil"></div>
+        </div>
+        <div class="info_block">
+            <p>This page shows an image of the famous Pacman displayed on a loop creating an animation effect. I learned that at the MIT Boot Camp Week 4. By myself, I change the code to allow the image to bounce on the limits of the page no matter the width of the page. That creates a reactive effect.</p><br>
+            <p>Also, (after 5 seconds) I add my own full CSS shape of a blue ghost. That also bounces to the limits of the page. He always looks toward the direction of his walking, plus, if is near Pacman will look at him.</p><br>
+            <p>Do you think that the ghost has bad intentions?</p>
+        </div>
+        <div>
+            <a id="go_back" href="./index.html">Go back to Main Page</a>
+          </div>
+    </section>
+     <script src="./resources/scripts/pacman.js"></script>
+                    </body>
+</html>

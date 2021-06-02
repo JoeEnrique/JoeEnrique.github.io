@@ -171,6 +171,17 @@ p {
   text-align: center;
 }
 
+.info_block {
+  display: block;
+  position: relative;
+  width: 70vw;
+  top: 600px;
+  margin: 0 auto;
+  padding: 12px;
+  border: 3px solid gold;
+  color: white;
+}
+
 /* This make my objects stack on top of each other instead of next to each other, on smaller screens */
 @media (max-width: 600px) {
   .flyer_block,

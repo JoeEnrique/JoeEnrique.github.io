@@ -1,0 +1,22 @@
+#bouncearea {
+    position: relative;
+    background-color: #f0f0f0;
+    margin: 1em auto;
+  }
+  
+  .createdball {
+    background-color: black;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  #go_back {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    font-size: 20px;
+    padding: 0px 20px 0px 20px;
+  }
