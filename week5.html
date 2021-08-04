@@ -4,57 +4,187 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./resources/styles/styles.css" />
+    <link rel="stylesheet" href="./resources/styles/sidebar.css" />
     <link rel="stylesheet" href="./resources/styles/boston.css" />
-    <title>Boston Aerial</title>
+    <title>Week 5 Work</title>
   </head>
   <body>
-    <div class="title_block">
-      <h1>List of Employees with Gross Salary of Boston</h1>
+    <div class="main_container">
+      <!-- Nav * start ****************************************************** -->
+      <nav>
+        <div class="navbar">
+          <div id="name">JOSE FIGUEROA</div>
+          <div id="portfolio">
+            Portfolio: Web Developer, Computer Technician & More
+          </div>
+          <div id="image_frame">
+            <img id="image_id" src="./resources/images/joe_id_2x2.png" />
+          </div>
+        </div>
+      </nav>
+      <!-- Nav * end ****************************************************** -->
+      <!-- SideBar * start ****************************************************** -->
+      <div class="sidebar">
+        <div class="toggle">
+          <ion-icon name="menu-outline" class="open"></ion-icon>
+          <ion-icon name="close-outline" class="close"></ion-icon>
+        </div>
+        <ul>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./index.html">
+              <span class="icon" title="Home!"
+                ><ion-icon name="home-outline"></ion-icon
+              ></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./index_games.html">
+              <span class="icon" title="Entertaiment"
+                ><ion-icon name="game-controller-outline"></ion-icon
+              ></span>
+              <span class="title">Entertaiment</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./index_tutorial.html">
+              <span class="icon" title="My Tutorials"
+                ><ion-icon name="library-outline"></ion-icon
+              ></span>
+              <span class="title">My Tutorials</span>
+            </a>
+          </li>
+          <li class="list active">
+            <b></b>
+            <b></b>
+            <a href="./index_work.html">
+              <span class="icon" title="Weekly Work"
+                ><ion-icon name="code-working-outline"></ion-icon
+              ></span>
+              <span class="title">Weekly Work</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./resume.html">
+              <span class="icon" title="Resume"
+                ><ion-icon name="document-text-outline"></ion-icon
+              ></span>
+              <span class="title">Resume</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./about.html">
+              <span class="icon" title="About"
+                ><ion-icon name="clipboard-outline"></ion-icon
+              ></span>
+              <span class="title">About this page!</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./contactform.html">
+              <span class="icon" title="Contact me!"
+                ><ion-icon name="chatbubbles-outline"></ion-icon
+              ></span>
+              <span class="title">Contact me!</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./bootstrap.html">
+              <span class="icon bootstrap_icon" title="Bootstarp Use"
+                ><i class="bi bi-bootstrap"></i
+              ></span>
+              <span class="title">Bootstrap</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./repositories.html">
+              <span class="icon" title="Repositories"
+                ><ion-icon name="logo-github"></ion-icon
+              ></span>
+              <span class="title">Repositories</span>
+            </a>
+          </li>
+          <li class="list">
+            <b></b>
+            <b></b>
+            <a href="./underc.html">
+              <span class="icon" title="Futire Use"
+                ><ion-icon name="receipt-outline"></ion-icon
+              ></span>
+              <span class="title">Future Use</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- SideBar * end ****************************************************** -->
+      <!-- Main * start ****************************************************** -->
+      <main class="index">
+        <div class="title_block">
+          <h1>Week 5 Work: List of Employees with Gross Salary of Boston</h1>
+        </div>
+        <div id="panel">
+          <div id="image_container">
+            <img id="main_image" src="./resources/images/boston_aerial_2.png" />
+          </div>
+          <div id="title_list">
+            <h1>Full List of Employees</h1>
+          </div>
+          <div id="full_list"></div>
+
+          <div id="title_facts">
+            <h1>Facts about Boston Employee List</h1>
+          </div>
+          <div id="fact_info"></div>
+          <div id="reference_block"></div>
+          <!--
+          
+          <div class="info_block_2">
+            
+          </div>
+          -->
+        </div>
+      </main>
+      <!-- Main * end ****************************************************** -->
     </div>
-    <div id="image_container">
-      <img id="main_image" src="./resources/images/boston_aerial_2.png" />
-    </div>
-    <div id="data_container">
-      <h1>Full List</h1>
-      <div id="full_list"></div>
-    </div>
-    <div id="facts">
-      <h1>Facts about Boston Employee List</h1>
-      <br />
-      <div id="fact_info"></div>
-    </div>
-    <div id="reference_block"></div>
-    <div class="info_block_2">
-      <p>
-        This time was requested to handle a large amount of data. Look for all
-        employees that earn more than $100,000.00 and show the top 5.
-      </p>
-      <br />
-      <p>
-        To accomplish that, I take the code that was shown on the video. Then
-        add my own twist to show the information.
-      </p>
-      <br />
-      <p>
-        <i
-          >I use a different picture but from the same place. I add a dynamic
-          block that periodically shows the information about the picture. I
-          show the full list of employees on the left, inside of a scrollable
-          area. The code changes the background of every odd number of each name
-          with an almost transparent blue shadow. In the center, I show the
-          requested information.</i
-        >
-      </p>
-      <br />
-      <p>
-        One last thing, the font of the center paragraph change size if the
-        browser window change size.
-      </p>
-    </div>
-    <div>
-      <a id="go_back" href="./index.html">Go back to Main Page</a>
-    </div>
+    <!-- Footer * start ****************************************************** -->
+    <footer>
+      <div class="footer">
+        <span class="designer">Designed By: JoeEnrique</span>
+      </div>
+    </footer>
+    <!-- Footer * end ****************************************************** -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./resources/scripts/sidebar_active.js">
+      //add active status on clic
+    </script>
     <script type="module" src="./resources/scripts/boston_data.js"></script>
     <script type="module" src="./resources/scripts/boston.js"></script>
   </body>

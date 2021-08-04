@@ -10,45 +10,45 @@
     />
     <link rel="stylesheet" href="./resources/styles/styles.css" />
     <link rel="stylesheet" href="./resources/styles/sidebar.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./resources/styles/entertaiment.css" />
+    <link rel="stylesheet" href="./resources/styles/cardgame.css" />
+    <script type="module" src="./resources/scripts/deck.js"></script>
+    <title>Card Game</title>
   </head>
   <body>
-    <div class="main_container" id="indexpage">
-      <!-- Nav * start ****************************************************** -->
+    <div class="main_container" id="game_index">
       <nav>
         <div class="navbar">
           <div id="name">JOSE FIGUEROA</div>
           <div id="portfolio">
-            Portfolio: Web Developer, Computer Technician & More
+            Portfolio: Web Developer, App Developer & More
           </div>
           <div id="image_frame">
             <img id="image_id" src="./resources/images/joe_id_2x2.png" />
           </div>
         </div>
       </nav>
-      <!-- Nav * end ****************************************************** -->
-      <!-- SideBar * start ****************************************************** -->
       <div class="sidebar">
         <div class="toggle">
           <ion-icon name="menu-outline" class="open"></ion-icon>
           <ion-icon name="close-outline" class="close"></ion-icon>
         </div>
         <ul>
-          <li class="list active">
+          <li class="list">
             <b></b>
             <b></b>
             <a href="./index.html">
-              <span class="icon" title="Home!"
+              <span class="icon"
                 ><ion-icon name="home-outline"></ion-icon
               ></span>
               <span class="title">Home</span>
             </a>
           </li>
-          <li class="list">
+          <li class="list active">
             <b></b>
             <b></b>
             <a href="./index_games.html">
-              <span class="icon" title="Entertaiment"
+              <span class="icon"
                 ><ion-icon name="game-controller-outline"></ion-icon
               ></span>
               <span class="title">Entertaiment</span>
@@ -58,7 +58,7 @@
             <b></b>
             <b></b>
             <a href="./index_tutorial.html">
-              <span class="icon" title="My Tutorials"
+              <span class="icon"
                 ><ion-icon name="library-outline"></ion-icon
               ></span>
               <span class="title">My Tutorials</span>
@@ -68,7 +68,7 @@
             <b></b>
             <b></b>
             <a href="./index_work.html">
-              <span class="icon" title="Weekly Work"
+              <span class="icon"
                 ><ion-icon name="code-working-outline"></ion-icon
               ></span>
               <span class="title">Weekly Work</span>
@@ -78,7 +78,7 @@
             <b></b>
             <b></b>
             <a href="./resume.html">
-              <span class="icon" title="Resume"
+              <span class="icon"
                 ><ion-icon name="document-text-outline"></ion-icon
               ></span>
               <span class="title">Resume</span>
@@ -88,7 +88,7 @@
             <b></b>
             <b></b>
             <a href="./about.html">
-              <span class="icon" title="About"
+              <span class="icon"
                 ><ion-icon name="clipboard-outline"></ion-icon
               ></span>
               <span class="title">About this page!</span>
@@ -98,7 +98,7 @@
             <b></b>
             <b></b>
             <a href="./contactform.html">
-              <span class="icon" title="Contact me!"
+              <span class="icon"
                 ><ion-icon name="chatbubbles-outline"></ion-icon
               ></span>
               <span class="title">Contact me!</span>
@@ -108,7 +108,7 @@
             <b></b>
             <b></b>
             <a href="./bootstrap.html">
-              <span class="icon" title="Bootstarp Use"
+              <span class="icon bootstrap_icon" title="Bootstarp Use"
                 ><i class="bi bi-bootstrap"></i
               ></span>
               <span class="title">Bootstrap</span>
@@ -136,62 +136,20 @@
           </li>
         </ul>
       </div>
-      <!-- SideBar * end ****************************************************** -->
-      <!-- Main * start ****************************************************** -->
-      <main class="main">
+      <main id="game_maincontainer">
         <div class="title_block">
-          <h1>Welcome</h1>
+          <h1>Card Game</h1>
         </div>
-        <div class="welcome">
-          <h1>Welcome!</h1>
-          <p>
-            Hi, I am Jose Figueroa, Web Developer, Computer Technician, and
-            more. I am interested in knowing you and taking care of your
-            possible business needs. Ho! by the way, Welcome to my Online
-            Portfolio on GitHub. Is under construction but the general public
-            can visit and have an opportunity to consider my work style. Use the
-            sidebar on the left to navigate through it.
-          </p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              width="700"
-              height="400"
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/1_PHbFFSBLE"
-            ></iframe>
+        <div class="game">
+          <div class="gamecontainer">
+            <div class="computer-deck deck">26</div>
+            <div class="computer-card-slot card-slot">♥</div>
+            <div class="text">JOE TEST</div>
+            <div class="player-deck deck">26</div>
+            <div class="player-card-slot card-slot">♥</div>
           </div>
         </div>
-        <div class="instructions">
-          <h2>A little about me</h2>
-          <br />
-          <p>
-            I am from Puerto Rico. I study and working in a few technological
-            fields from computer repair to Cisco devices configurations. But, my
-            passion is always coding. My first computer was the famous Color
-            Computer 2 from Radio Shack. For the ones that remember that store.
-            I live in New Jersey now. I am also a student of the one and only
-            Massachusetts Institute of Technology in Boston. Here I am enrolled
-            in the MIT xPro Full Stack Development Certificate program. This
-            very page is part of the requirements projects. Even though my name
-            is Jose, everyone who knows me calls me Joe. You can call me Joe
-            also. You can find more details about me in the Resume section.
-          </p>
-        </div>
-        <div class="instructions">
-          <p>
-            Remember, combining You, your business needs, and me, we can create
-            the Web Synergy that will help your business grow.
-          </p>
-        </div>
-        <div class="instructions" id="notification">
-          <p>
-            Thank you for your visit, and if you want lo leve a comment please
-            do so on the contact page.
-          </p>
-        </div>
       </main>
-      <!-- Main * end ****************************************************** -->
-      <!--<div class="content" id="content1"></div>-->
     </div>
     <footer>
       <div class="footer">
@@ -209,5 +167,7 @@
     <script src="./resources/scripts/sidebar_active.js">
       //add active status on clic
     </script>
+
+    <script type="module" src="./resources/scripts/cardgame_engine.js"></script>
   </body>
 </html>

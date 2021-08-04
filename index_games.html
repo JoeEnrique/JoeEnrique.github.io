@@ -10,16 +10,17 @@
     />
     <link rel="stylesheet" href="./resources/styles/styles.css" />
     <link rel="stylesheet" href="./resources/styles/sidebar.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./resources/styles/index.css" />
+    <title>Game Index</title>
   </head>
   <body>
-    <div class="main_container" id="indexpage">
+    <div class="main_container" id="game_index">
       <!-- Nav * start ****************************************************** -->
       <nav>
         <div class="navbar">
           <div id="name">JOSE FIGUEROA</div>
           <div id="portfolio">
-            Portfolio: Web Developer, Computer Technician & More
+            Portfolio: Web Developer, App Developer & More
           </div>
           <div id="image_frame">
             <img id="image_id" src="./resources/images/joe_id_2x2.png" />
@@ -34,7 +35,7 @@
           <ion-icon name="close-outline" class="close"></ion-icon>
         </div>
         <ul>
-          <li class="list active">
+          <li class="list">
             <b></b>
             <b></b>
             <a href="./index.html">
@@ -44,7 +45,7 @@
               <span class="title">Home</span>
             </a>
           </li>
-          <li class="list">
+          <li class="list active">
             <b></b>
             <b></b>
             <a href="./index_games.html">
@@ -108,7 +109,7 @@
             <b></b>
             <b></b>
             <a href="./bootstrap.html">
-              <span class="icon" title="Bootstarp Use"
+              <span class="icon bootstrap_icon" title="Bootstarp Use"
                 ><i class="bi bi-bootstrap"></i
               ></span>
               <span class="title">Bootstrap</span>
@@ -136,62 +137,46 @@
           </li>
         </ul>
       </div>
-      <!-- SideBar * end ****************************************************** -->
-      <!-- Main * start ****************************************************** -->
-      <main class="main">
+      <!-- -->
+      <main class="index">
         <div class="title_block">
-          <h1>Welcome</h1>
+          <h1>Entertaiment</h1>
         </div>
-        <div class="welcome">
-          <h1>Welcome!</h1>
-          <p>
-            Hi, I am Jose Figueroa, Web Developer, Computer Technician, and
-            more. I am interested in knowing you and taking care of your
-            possible business needs. Ho! by the way, Welcome to my Online
-            Portfolio on GitHub. Is under construction but the general public
-            can visit and have an opportunity to consider my work style. Use the
-            sidebar on the left to navigate through it.
-          </p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              width="700"
-              height="400"
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/1_PHbFFSBLE"
-            ></iframe>
+        <div class="panelinfo">
+          <a class="tile" href="./game_blockgame.html"
+            ><img src="resources/images/blockgameico.png"
+          /></a>
+          <div class="tileinfo">
+            BLOCK GAME<br /><br />
+            <p>
+              A game like the old Breakout.<br />
+              Instructions:<br />
+              Hit the spacebar to start.<br />
+              Use the arrows to move the paddle.<br />
+              Act quickly.<br />
+              Refresh the page to Restart.
+            </p>
           </div>
         </div>
-        <div class="instructions">
-          <h2>A little about me</h2>
-          <br />
-          <p>
-            I am from Puerto Rico. I study and working in a few technological
-            fields from computer repair to Cisco devices configurations. But, my
-            passion is always coding. My first computer was the famous Color
-            Computer 2 from Radio Shack. For the ones that remember that store.
-            I live in New Jersey now. I am also a student of the one and only
-            Massachusetts Institute of Technology in Boston. Here I am enrolled
-            in the MIT xPro Full Stack Development Certificate program. This
-            very page is part of the requirements projects. Even though my name
-            is Jose, everyone who knows me calls me Joe. You can call me Joe
-            also. You can find more details about me in the Resume section.
-          </p>
-        </div>
-        <div class="instructions">
-          <p>
-            Remember, combining You, your business needs, and me, we can create
-            the Web Synergy that will help your business grow.
-          </p>
-        </div>
-        <div class="instructions" id="notification">
-          <p>
-            Thank you for your visit, and if you want lo leve a comment please
-            do so on the contact page.
-          </p>
+        <div class="panelinfo">
+          <a class="tile" href="/game_cardgame.html"
+            ><img src="resources/images/cardgameico.png"
+          /></a>
+          <div class="tileinfo">
+            Card Game<br /><br />
+            <p>
+              A mouse click card game<br />
+              Instructions:<br />
+              The top cards are the computer, the bottom ones are yours.<br />
+              Click over the screen to draw a card.<br />
+              If your card is higher you win and that card is added to your
+              deck.<br />
+              The winner is the one that keeps more cards at the end.<br />
+              Refresh the page to Restart.
+            </p>
+          </div>
         </div>
       </main>
-      <!-- Main * end ****************************************************** -->
-      <!--<div class="content" id="content1"></div>-->
     </div>
     <footer>
       <div class="footer">

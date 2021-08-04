@@ -8,19 +8,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="https://formsubmit.co/css/app.css" />
     <link rel="stylesheet" href="./resources/styles/styles.css" />
     <link rel="stylesheet" href="./resources/styles/sidebar.css" />
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="./resources/styles/contactform.css" />
+    <title>Contact me</title>
   </head>
   <body>
-    <div class="main_container" id="indexpage">
+    <div class="main_container">
       <!-- Nav * start ****************************************************** -->
       <nav>
         <div class="navbar">
           <div id="name">JOSE FIGUEROA</div>
-          <div id="portfolio">
-            Portfolio: Web Developer, Computer Technician & More
-          </div>
+          <div id="portfolio">Portfolio: Web Developer, MIT Student & More</div>
           <div id="image_frame">
             <img id="image_id" src="./resources/images/joe_id_2x2.png" />
           </div>
@@ -34,7 +34,7 @@
           <ion-icon name="close-outline" class="close"></ion-icon>
         </div>
         <ul>
-          <li class="list active">
+          <li class="list">
             <b></b>
             <b></b>
             <a href="./index.html">
@@ -94,7 +94,7 @@
               <span class="title">About this page!</span>
             </a>
           </li>
-          <li class="list">
+          <li class="list active">
             <b></b>
             <b></b>
             <a href="./contactform.html">
@@ -108,7 +108,7 @@
             <b></b>
             <b></b>
             <a href="./bootstrap.html">
-              <span class="icon" title="Bootstarp Use"
+              <span class="icon bootstrap_icon" title="Bootstarp Use"
                 ><i class="bi bi-bootstrap"></i
               ></span>
               <span class="title">Bootstrap</span>
@@ -138,60 +138,63 @@
       </div>
       <!-- SideBar * end ****************************************************** -->
       <!-- Main * start ****************************************************** -->
-      <main class="main">
+      <main class="contact">
         <div class="title_block">
-          <h1>Welcome</h1>
+          <h1>Contact Me!</h1>
         </div>
-        <div class="welcome">
-          <h1>Welcome!</h1>
-          <p>
-            Hi, I am Jose Figueroa, Web Developer, Computer Technician, and
-            more. I am interested in knowing you and taking care of your
-            possible business needs. Ho! by the way, Welcome to my Online
-            Portfolio on GitHub. Is under construction but the general public
-            can visit and have an opportunity to consider my work style. Use the
-            sidebar on the left to navigate through it.
-          </p>
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              width="700"
-              height="400"
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/1_PHbFFSBLE"
-            ></iframe>
-          </div>
+        <div class="contact_form">
+          <h1>Submit Your message here</h1>
+          <form
+            target="_blank"
+            action="https://formsubmit.co/3c03f984ba77f21673fb6a54a65cc6f1"
+            method="POST"
+          >
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea
+                placeholder="Your Message"
+                class="form-control"
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">
+              Submit Your Message
+            </button>
+          </form>
         </div>
-        <div class="instructions">
-          <h2>A little about me</h2>
-          <br />
+        <div class="info">
+          <hr class="solid" />
           <p>
-            I am from Puerto Rico. I study and working in a few technological
-            fields from computer repair to Cisco devices configurations. But, my
-            passion is always coding. My first computer was the famous Color
-            Computer 2 from Radio Shack. For the ones that remember that store.
-            I live in New Jersey now. I am also a student of the one and only
-            Massachusetts Institute of Technology in Boston. Here I am enrolled
-            in the MIT xPro Full Stack Development Certificate program. This
-            very page is part of the requirements projects. Even though my name
-            is Jose, everyone who knows me calls me Joe. You can call me Joe
-            also. You can find more details about me in the Resume section.
+            This form is functional.<br />
+            I will appreciate from any visitor to leave a message. <br />Thanks
+            for your participation.
           </p>
-        </div>
-        <div class="instructions">
-          <p>
-            Remember, combining You, your business needs, and me, we can create
-            the Web Synergy that will help your business grow.
-          </p>
-        </div>
-        <div class="instructions" id="notification">
-          <p>
-            Thank you for your visit, and if you want lo leve a comment please
-            do so on the contact page.
-          </p>
+          <hr class="solid" />
         </div>
       </main>
-      <!-- Main * end ****************************************************** -->
-      <!--<div class="content" id="content1"></div>-->
     </div>
     <footer>
       <div class="footer">
