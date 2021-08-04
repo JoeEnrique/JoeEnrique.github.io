@@ -1,13 +1,13 @@
 <h1><img src="https://joeenrique.github.io/resources/images/joe_id_4.png" alt="JoeEnrique Portfolio" width="15%"></h1>
 # JoeEnrique.github.io
 Portfolio
-> Version 0.4
+> Version 0.5
 
 
 ## Project Name: Jose Figueroa Portfolio.  
 
 ## Description:
-This is will be my future Online Portfolio. Is under construction but the general public can visit and have an opportunity to consider my work style.
+This is will be my Online Portfolio. Is under construction but the general public can visit and have an opportunity to consider my work style.
 
 ## Installation:
 n/a
