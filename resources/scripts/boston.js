@@ -7,6 +7,7 @@ console.log(bostonData);
 var employee = [];
 var peopleCounter = 0;
 var dollarFormat = Intl.NumberFormat("en-US");
+var outStep = 130;
 
 /*
 import("./boston_data.js").then(({ bostonData }) => {
@@ -15,7 +16,7 @@ import("./boston_data.js").then(({ bostonData }) => {
 */
 var picReference =
   "An aerial view of Boston. Image credit: HaizhanZheng/iStock";
-console.log(picReference);
+//console.log(picReference);
 
 var picReferenceElement = document.getElementById("reference_block");
 var backGroundImage = document.getElementById("main_image");
@@ -49,8 +50,8 @@ function movePicReference() {
 
     case "backward":
       referenceLeft = referenceLeft - 10;
-      if (referenceLeft < 0 - (referenceWidth + 20)) {
-        referenceLeft = 0 - (referenceWidth + 20);
+      if (referenceLeft < 0 - (referenceWidth + outStep)) {
+        referenceLeft = 0 - (referenceWidth + outStep);
         direction = "stay";
       }
       setTimeout(movePicReference, 10);
@@ -64,9 +65,9 @@ function createPicReference() {
   let textNode = document.createTextNode(picReference);
   picReferenceElement.appendChild(textNode);
   referenceWidth = picReferenceElement.offsetWidth;
-  referenceLeft = 0 - (referenceWidth + 20);
+  referenceLeft = 0 - (referenceWidth + outStep);
   picReferenceElement.style.left = referenceLeft + "px";
-  picReferenceElement.style.top = 80 + "vh";
+  picReferenceElement.style.top = 66 + "vh";
   setTimeout(movePicReference, 3000);
   //console.log("JKJ");
 }
