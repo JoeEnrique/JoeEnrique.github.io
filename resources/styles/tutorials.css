@@ -1,0 +1,78 @@
+.title_block {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+#tutorials {
+  background: rgb(36, 50, 69);
+  border-radius: 25px;
+  margin: 0 0 0 20px;
+}
+
+#github {
+  background: rgb(36, 50, 69);
+  border-radius: 25px;
+  margin: 0 0 0 20px;
+}
+
+.panelinfo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.tile {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background: rgb(36, 50, 69);
+  border-radius: 40px;
+}
+
+#info {
+  display: inline-block;
+  width: 70%;
+  margin: 20px;
+  padding: 30px;
+  border: 3px solid rgb(36, 50, 69);
+  background: rgb(36, 50, 69);
+  text-align: center;
+  border-radius: 40px;
+  color: whitesmoke;
+}
+
+.tutorial_block {
+  width: 52%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.tutorial_block > p {
+  display: block;
+  margin: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.tutorial_block > img {
+  display: block;
+  margin: 20px auto;
+}
+
+.tutorial_block > b {
+  text-align: center;
+}
+
+.tutorial > div {
+  background: #eee;
+  padding: 10px;
+}
+
+.tutorial > div:nth-child(odd) {
+  background: #ddd;
+}

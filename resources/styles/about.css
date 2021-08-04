@@ -1,0 +1,30 @@
+.about_page {
+  border: 3px solid rgb(36, 44, 54);
+  border-radius: var(--main-radius);
+  padding: 60px;
+  text-align: center;
+  width: 30vw;
+  margin: 30px auto;
+}
+
+main > img {
+  display: block;
+  text-align: center;
+  width: 30vw;
+  margin: 30px auto;
+}
+
+.api {
+  display: block;
+  border: 1px solid rgb(36, 44, 54);
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.api > img {
+  width: 200px;
+}
+
+.api > p {
+  margin-bottom: 10px;
+}

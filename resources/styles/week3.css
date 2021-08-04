@@ -1,22 +1,37 @@
 #bouncearea {
-    position: relative;
-    background-color: #f0f0f0;
-    margin: 1em auto;
-  }
-  
-  .createdball {
-    background-color: black;
-    position: absolute;
-    display: inline-block;
-    border-radius: 50%;
-  }
+  display: flexbox;
+  width: 800px;
+  height: 600px;
+  position: relative;
+  background-color: #f0f0f0;
+  margin: 1em auto;
+}
 
-  #go_back {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-    font-size: 20px;
-    padding: 0px 20px 0px 20px;
-  }
+.createdball {
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*
+
+.no {
+  display: block;
+  position: relative;
+}
+*/
+/*
+#bouncearea {
+  position: relative;
+  background-color: #f0f0f0;
+  margin: 1em auto;
+}
+
+.createdball {
+  background-color: black;
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+}
+*/

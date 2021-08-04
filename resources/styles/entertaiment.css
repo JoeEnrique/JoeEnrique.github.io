@@ -1,0 +1,35 @@
+#game_maincontainer {
+  background: rgb(36, 50, 69);
+  border-radius: 25px;
+  margin: 0 0 0 20px;
+}
+
+.panelinfo {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.gametile {
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  background: rgb(36, 50, 69);
+  border-radius: 40px;
+}
+
+#gameinfo {
+  display: inline-block;
+  width: 70%;
+  margin: 20px;
+  padding: 30px;
+  border: 3px solid rgb(36, 50, 69);
+  background: rgb(36, 50, 69);
+  text-align: center;
+  border-radius: 40px;
+  color: whitesmoke;
+}

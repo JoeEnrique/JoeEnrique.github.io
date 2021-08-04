@@ -1,11 +1,13 @@
+/*
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
 }
+*/
 
-.info_container {
+.status_container {
   position: relative;
   display: block;
   float: left;
@@ -15,9 +17,10 @@
   border: 10px solid green;
   background-color: rgb(124, 179, 124);
   font-family: "Courier New", Courier, monospace;
+  border-bottom-left-radius: 20px;
 }
 
-.info_container p {
+.status_container > p {
   margin: 10px;
   font-weight: bold;
   color: white;
@@ -33,6 +36,7 @@
   border: 10px solid green;
 }
 
+/*
 .title_block {
   background-color: green;
   width: 100%;
@@ -42,7 +46,7 @@
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+*/
 #title1 {
   margin: 5px;
   color: white;
@@ -125,9 +129,4 @@
   height: 50px;
   border-radius: 50%;
   background: gray;
-}
-
-#go_back {
-  font-size: 20px;
-  padding: 0px 20px 0px 20px;
 }

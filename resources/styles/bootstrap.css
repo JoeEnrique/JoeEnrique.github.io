@@ -1,0 +1,79 @@
+/*
+.col-3,
+.col-9 {
+  border: 1px solid rgb(36, 50, 69);
+  background: rgb(36, 50, 69);
+}
+*/
+
+#bootstrap_sidebar {
+  margin-top: 10px;
+}
+
+#nav {
+  background: rgb(36, 50, 69);
+}
+
+#myid {
+  background: rgb(36, 50, 69);
+}
+
+#name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  color: white;
+  background: rgb(36, 50, 69);
+  margin-left: 20px;
+}
+
+#portfolio {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  background: rgb(36, 50, 69);
+  margin-left: 20px;
+}
+
+#image_frame {
+  margin: 10px;
+  background: rgb(36, 50, 69);
+}
+
+#image_id {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  float: right;
+  background: rgb(36, 50, 69);
+}
+
+.title_block {
+  margin-top: 10px;
+  background-color: green;
+  padding: 30px;
+  font-size: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  text-align: center;
+  margin: 50px;
+}
+
+p {
+  margin: 50px;
+  font-weight: 600px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.bootstrap_page > img {
+  display: block;
+  width: 500px;
+  height: 450px;
+  float: left;
+  margin: 70px 20px;
+}

@@ -1,0 +1,25 @@
+.resume_section {
+  margin: 20px;
+  padding: 0 30px;
+}
+
+.resume_section > h1 {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.resume_section > hr {
+  border-top: 8px solid rgb(36, 50, 69);
+  margin: 20px 0;
+}
+
+.resume_subsection > ul {
+  margin: 10px 0;
+  margin-left: 80px;
+  list-style-image: url(../images/bullet18.png);
+  padding: 20px;
+}
+
+.resume_subsection > ul > li {
+  padding: 10px;
+}

@@ -1,0 +1,32 @@
+#image_container {
+  display: block;
+  float: left;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  border: 4px solid rgb(36, 50, 69);
+  border-radius: 25px;
+}
+
+#image_container > img {
+  border-radius: 20px;
+}
+
+.info {
+  display: block;
+  position: relative;
+  float: left;
+  width: 40%;
+  height: auto;
+  margin: 20px;
+  padding: 30px;
+  border: 4px solid rgb(36, 50, 69);
+  border-radius: 20px;
+}
+
+.info {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
+  color: white;
+  background: rgb(9, 156, 16);
+}

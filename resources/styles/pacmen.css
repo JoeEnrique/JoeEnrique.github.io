@@ -1,0 +1,22 @@
+#panel {
+  position: relative;
+}
+
+#control {
+  display: block;
+  position: relative;
+  background: rgb(134, 69, 69);
+}
+
+button {
+  width: 200px;
+  height: 40px;
+  margin: 20px;
+}
+
+#game {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}

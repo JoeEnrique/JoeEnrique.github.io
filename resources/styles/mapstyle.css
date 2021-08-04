@@ -1,0 +1,7 @@
+#map {
+  display: block;
+  width: 80vw;
+  height: 60vh;
+  margin: 10px auto;
+  border: solid 10px green;
+}
