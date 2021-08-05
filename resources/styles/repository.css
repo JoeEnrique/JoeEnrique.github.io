@@ -2,6 +2,7 @@
   display: block;
   border: 1px solid rgb(36, 36, 36);
   float: left;
+  height: auto;
   margin: 50px;
   text-align: center;
 }
@@ -30,4 +31,46 @@
 #eyes,
 #map {
   width: 180px;
+}
+
+.galery {
+  display: block;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  background: blueviolet;
+}
+
+.licence {
+  clear: both;
+  display: block;
+  border: 1px solid rgb(36, 36, 36);
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.licence_box_link {
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
+.licence_box_link > p {
+  display: block;
+  margin-top: 8px;
+  float: left;
+}
+
+.licence_box_link > a > img {
+  width: 140px;
+  margin-left: 10px;
+  float: left;
+}
+
+.licence > hr {
+  border-top: 8px solid rgb(36, 50, 69);
+  margin: 20px 0;
 }

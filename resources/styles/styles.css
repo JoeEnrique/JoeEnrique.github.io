@@ -29,12 +29,11 @@ MIT color logo rgb(163, 31, 52);
   float: right;
 }
 
-/*
-img {
-  position: relative;
-}
-*/
 /*****************************************************New Set***********/
+
+b {
+  font-weight: bold;
+}
 
 /*Create Variables on CSS*/
 :root {
