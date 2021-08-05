@@ -34,12 +34,8 @@
 }
 
 .galery {
-  display: block;
-  position: relative;
-  width: fit-content;
-  height: fit-content;
+  display: table;
   margin: 0 auto;
-  background: blueviolet;
 }
 
 .licence {
